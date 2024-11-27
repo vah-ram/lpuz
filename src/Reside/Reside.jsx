@@ -28,7 +28,7 @@ export let Reside = () => {
                                         <p className="valute">72.350$</p>
                                         <h3>Assati Garden City</h3>
                                         <div className="btn">
-                                            Buy
+                                            Buy more
                                         </div>
                                     </div>
                             </a>
