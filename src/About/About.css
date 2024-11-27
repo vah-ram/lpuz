@@ -1,0 +1,60 @@
+
+.AboutContainer {
+    width: 100%;
+    height: 90vh;
+    color: white;
+    transform: translate(0,60px);
+    position: relative;
+}
+
+.aboutTitle {
+    width: 300px;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    left: 25vw;
+    top: 20vh;
+}
+
+.aboutTitle span {
+    color: rgb(255, 115, 0);
+}
+
+.homeImages {
+    position: absolute;
+    left: 22vw;
+    top: 35vh;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.homeImages div {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.homeImages img {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    transition: .3s ease-in-out;
+}
+
+.homeImages div:hover img{
+    transform: scale(1.2);
+}
+
+.aboutText {
+    position: absolute;
+    width: 420px;
+    right: 19vw;
+    top: 20vh;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

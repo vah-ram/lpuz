@@ -1,0 +1,212 @@
+
+
+.main_footer {
+    width: 100%;
+    height: 100vh;
+    transform: translate(0,60px);
+    background: transparent;
+    display: flex;
+  }
+
+.footerDiv {
+    width: 30vw;
+    height: 100%;
+    position: relative;
+    left: 18vw;
+}
+
+.titleText {
+    width: 400px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    position: relative;
+    line-height: 55px;
+    left: 0;
+    top: 15vh;
+    animation: startAnimTitle 3s ease-in-out;
+}
+
+.titleText span {
+    color: rgb(255, 115, 0);
+}
+
+.titleText::after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: linear-gradient(rgb(255, 115, 0),rgb(255, 123, 34));
+    top: 0;
+    left: 12.5rem;
+}
+
+.secondaryText {
+    width: 300px;
+    font-size: 13px;
+    font-family: sans-serif;
+    color: white;
+    opacity: .5;
+    position: absolute;
+    left: 0;
+    top: 48vh;
+    line-height: 20px;
+    animation: startAnimSecondaryText 3s ease-in-out;
+}
+
+.searchDiv {
+    width: 350px;
+    height: 50px;
+    background: white;
+    position: relative;
+    left: 0;
+    top: 36vh;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: startAnimInput 3s ease-in-out;
+}
+
+.searchDiv .placeIcon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.searchDiv .SearchInput {
+    width: 60%;
+    height: 30px;
+    outline: none;
+    border: none;
+}
+
+.searchDiv .searchBtn {
+    width: 90px;
+    height: 35px;
+    background: rgb(0, 53, 197);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: .8;
+    transition: .2s ease;
+}
+
+.searchBtn p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.searchBtn:hover {
+    opacity: .7;
+}
+
+<!--
+
+.parentImgDiv {
+    width: 30vw;
+    height: 70vh;
+    position: absolute;
+    top: 10vh;
+    right: 10vw;
+    border: 6px solid rgba(94, 94, 94, 0.555);
+    border-radius: 50% 50% 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: startAnimImgDiv 3s ease-in-out;
+}
+
+.imgDiv {
+    width: 35vw;
+    height: 70vh;
+    background: url('https://zoning-info.com/wp-content/uploads/2023/11/property-requirements.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: .3s ease-in-out;
+}
+
+.imgDiv:hover {
+    transform: scale(110%);
+}
+
+.beginners {
+    display: flex;
+    position: absolute;
+    left: -20px;
+    bottom: 110px;
+}
+
+.numBeginner {
+    font-size: 28px;
+    font-family: sans-serif;
+    color: white;
+    margin: 17px; 
+    display: block;
+    animation: startAnimBeginner 3s ease-in-out;
+}
+
+.numBeginner span {
+    display: flex;
+}
+
+.numBeginner span p {
+    margin-left: 4px;
+}
+
+.numBeginner h4 {
+    width: 100px;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
+/*----------------keyframes animations-------------*/
+
+@keyframes startAnimTitle {
+    from {
+        transform: translate(-30px,-30px);
+        opacity: 0;
+    }
+
+}
+
+@keyframes startAnimSecondaryText {
+    from {
+        transform: translate(-20px);
+        opacity: 0;
+    }
+}
+
+@keyframes startAnimInput {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes startAnimBeginner {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes startAnimImgDiv {
+    from {
+        opacity: 0;
+    }
+}
+
+/*media*/
+
+@media (max-width:900px) {
+    .parentImgDiv {
+        display: none;
+    }
+}
